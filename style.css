@@ -7,7 +7,7 @@ table, th, td {
 }
 body
 {
-	background:#27ae60;
+	background: darkgrey;
     font-family: arial;
 }
 h1
@@ -26,3 +26,21 @@ li
 {
 	color:#C0041E;
 }
+
+.loader {
+        position: relative;
+        margin: auto;
+        width: 132px;
+        height: 132px;
+        border-left: 16px solid #ffa700; 
+        border-top: 16px solid #008744;
+        border-right: 16px solid #0057e7;
+        border-bottom: 16px solid #d62d20;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
