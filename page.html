@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
+  <script type="text/javascript" src="scripts.js"></script>
   <style type="text/css">
   	table
 	{
@@ -38,7 +39,7 @@
      </tr>
   </table>
 
-    <form method="post" action="traitement.php">
+    <form method="post" action="javascript:traitement();">
        <p>
            <label for="pseudo">Votre pseudo :</label>
            <input type="text" name="pseudo" id="pseudo" />
@@ -47,6 +48,8 @@
            <label for="pass">Votre mot de passe :</label>
            <input type="password" name="pass" id="pass" />
            
+           <br />
+           <input type="submit" id="submit" value="Valider" />
        </p>
     </form>
 </body>
