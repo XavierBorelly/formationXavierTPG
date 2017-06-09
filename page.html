@@ -6,22 +6,34 @@
 </head>
 <body>
   <table>
-   <tr>
-       <th>Nom</th>
-       <th>Âge</th>
-       <th>Pays</th>
-   </tr>
+     <tr>
+         <th>Nom</th>
+         <th>Âge</th>
+         <th>Pays</th>
+     </tr>
 
-   <tr>
-       <td>Carmen</td>
-       <td>33 ans</td>
-       <td>Espagne</td>
-   </tr>
-   <tr>
-       <td>Michelle</td>
-       <td>26 ans</td>
-       <td>États-Unis</td>
-   </tr>
-</table>
+     <tr>
+         <td>Carmen</td>
+         <td>33 ans</td>
+         <td>Espagne</td>
+     </tr>
+     <tr>
+         <td>Michelle</td>
+         <td>26 ans</td>
+         <td>États-Unis</td>
+     </tr>
+  </table>
+
+    <form method="post" action="traitement.php">
+       <p>
+           <label for="pseudo">Votre pseudo :</label>
+           <input type="text" name="pseudo" id="pseudo" />
+           
+           <br />
+           <label for="pass">Votre mot de passe :</label>
+           <input type="password" name="pass" id="pass" />
+           
+       </p>
+    </form>
 </body>
 </html>
