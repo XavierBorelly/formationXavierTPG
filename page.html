@@ -3,8 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  
-          <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="scripts.js"></script>
+  <style type="text/css">
+  	table
+	{
+    	border-collapse: collapse;
+	}
+	td, th /* Mettre une bordure sur les td ET les th */
+	{
+	    border: 2px solid green;
+	}
+	p
+	{
+		color: green;
+	}
+  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="loader"></div>
@@ -27,7 +41,7 @@
      </tr>
   </table>
 
-    <form method="post" action="traitement.php">
+    <form method="post" action="javascript:traitement();">
        <p>
            <label for="pseudo">Votre pseudo :</label>
            <input type="text" name="pseudo" id="pseudo" />
@@ -36,6 +50,8 @@
            <label for="pass">Votre mot de passe :</label>
            <input type="password" name="pass" id="pass" />
            
+           <br />
+           <input type="submit" id="submit" value="Valider" />
        </p>
     </form>
 </body>
